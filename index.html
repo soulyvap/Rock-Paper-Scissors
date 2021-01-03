@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="assets/logo.png">
+    <script defer src="app.js"></script>
+
+</head>
+<body>
+
+    <section class="game">
+        <div class="top fadeOut">
+            <div class="player-score">
+                <h1>0</h1>
+            </div>
+            <div class="player-health">
+                <progress class="pHealth" value="100" max="100"></progress>
+                <h2>Player</h2>
+                <p></p>
+            </div>
+            <div class="computer-health">
+                <progress class="cHealth" value="100" max="100"></progress>
+                <h2>Computer</h2>
+                <p></p>
+            </div>
+            <div class="computer-score">
+                <h1>0</h1>
+            </div>
+        </div>
+
+        <div class="intro">
+            <div class="title">
+                <img src="assets/title.png" alt="">
+            </div>
+            <div class="introAnimation">
+                <img class="rockIntro" src="assets/rock.png" alt="">
+                <img class="paperIntro" src="assets/paper.png" alt="">
+                <img class="scissorsIntro" src="assets/scissors.png" alt="">
+            </div>
+            <button>PRESS HERE TO START</button>
+        </div>
+
+        <div class="match fadeOut">
+            <h2 class="winner">Choose your move</h2>
+            <div class="hands">
+                <img class="player-hand" src="assets/rock.png" alt="">
+                <img class="computer-hand" src="assets/rock.png" alt="">
+            </div>
+            <div class="options">
+                <button class="rock">rock</button>
+                <button class="paper">paper</button>
+                <button class="scissors">scissors</button>
+            </div>
+        </div>
+        
+        <div class="end fadeOut">
+            <h2></h2>
+            <button class="playAgain">Play Again</button>
+        </div>
+
+        <div class="soundOptions">
+            <button class="mute">mute</button>
+            <button class="unmute">unmute</button>
+        </div>
+
+        <div class="rules-display">
+            <p><u>Rules</u><br/>
+                Win by reaching 10 points or getting a 3-point streak!
+            </p>
+        </div>
+        
+        <audio class="introSong" src="assets/opening.mp3"></audio>
+        <audio class="battleMusic" src="assets/battle.mp3"></audio>
+        <audio class="victorySong" src="assets/victory.mp3"></audio>
+        <audio class="downSound" src="assets/down.mp3"></audio>
+        <audio class="superSound" src="assets/super.mp3"></audio>
+        <audio class="weakSound" src="assets/weak.mp3"></audio>
+        
+    </section>
+</body>
+</html>
+
+<!-- DISCLAIMER: I hereby declare that I do not own the rights to the music/sounds used in this app. All rights belong to the owner. No Copyright Infringement Intended. -->
